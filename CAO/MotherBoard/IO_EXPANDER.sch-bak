@@ -1,0 +1,507 @@
+EESchema Schematic File Version 4
+LIBS:MotherBoard-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 12
+Title "GeoSeis"
+Date "2019-07-05"
+Rev "1"
+Comp "Oxilec"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74HC595 U7
+U 1 1 5D2F7AD0
+P 4725 1825
+F 0 "U7" H 4875 2375 50  0000 C CNN
+F 1 "74HC595" H 4950 1175 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4725 1825 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4725 1825 50  0001 C CNN
+F 4 "F:1013860" H 4725 1825 50  0001 C CNN "Fournisseur"
+	1    4725 1825
+	1    0    0    -1  
+$EndComp
+Text HLabel 3150 1425 0    50   Input ~ 0
+DATA_IN
+Text HLabel 3125 1625 0    50   Input ~ 0
+CLK
+Wire Wire Line
+	4100 1725 4325 1725
+$Comp
+L Device:C C?
+U 1 1 5D2F7DC1
+P 4250 975
+AR Path="/5CF8F033/5D2F7DC1" Ref="C?"  Part="1" 
+AR Path="/5CFA111D/5D2F7DC1" Ref="C?"  Part="1" 
+AR Path="/5D2F7DC1" Ref="C?"  Part="1" 
+AR Path="/5D1DA7D4/5D2F7DC1" Ref="C?"  Part="1" 
+AR Path="/5D2F7A84/5D2F7DC1" Ref="C44"  Part="1" 
+AR Path="/5EB0C120/5D2F7DC1" Ref="C48"  Part="1" 
+F 0 "C48" H 4135 929 50  0000 R CNN
+F 1 "100nF" H 4135 1020 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4288 825 50  0001 C CNN
+F 3 "~" H 4250 975 50  0001 C CNN
+F 4 "" H -25 -850 50  0001 C CNN "Fournisseur"
+	1    4250 975 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 800  4725 800 
+Wire Wire Line
+	4250 800  4250 825 
+Wire Wire Line
+	4725 800  4725 1225
+Connection ~ 4725 800 
+$Comp
+L power:GND #PWR0127
+U 1 1 5D2F7E84
+P 4725 2600
+F 0 "#PWR0127" H 4725 2350 50  0001 C CNN
+F 1 "GND" H 4730 2427 50  0000 C CNN
+F 2 "" H 4725 2600 50  0001 C CNN
+F 3 "" H 4725 2600 50  0001 C CNN
+	1    4725 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 2600 4725 2525
+$Comp
+L power:GND #PWR0128
+U 1 1 5D2F7ED0
+P 4250 1175
+F 0 "#PWR0128" H 4250 925 50  0001 C CNN
+F 1 "GND" H 4255 1002 50  0000 C CNN
+F 2 "" H 4250 1175 50  0001 C CNN
+F 3 "" H 4250 1175 50  0001 C CNN
+	1    4250 1175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1175 4250 1125
+Text HLabel 3125 1925 0    50   Input ~ 0
+LATCH
+Wire Wire Line
+	4325 3850 3975 3850
+Wire Wire Line
+	4100 4150 4325 4150
+$Comp
+L Device:C C?
+U 1 1 5D2F8259
+P 4250 3375
+AR Path="/5CF8F033/5D2F8259" Ref="C?"  Part="1" 
+AR Path="/5CFA111D/5D2F8259" Ref="C?"  Part="1" 
+AR Path="/5D2F8259" Ref="C?"  Part="1" 
+AR Path="/5D1DA7D4/5D2F8259" Ref="C?"  Part="1" 
+AR Path="/5D2F7A84/5D2F8259" Ref="C45"  Part="1" 
+AR Path="/5EB0C120/5D2F8259" Ref="C49"  Part="1" 
+F 0 "C49" H 4135 3329 50  0000 R CNN
+F 1 "100nF" H 4135 3420 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4288 3225 50  0001 C CNN
+F 3 "~" H 4250 3375 50  0001 C CNN
+F 4 "" H -25 -850 50  0001 C CNN "Fournisseur"
+	1    4250 3375
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 3225 4725 3225
+Wire Wire Line
+	4725 3225 4725 3150
+Wire Wire Line
+	4725 3225 4725 3650
+Connection ~ 4725 3225
+$Comp
+L power:GND #PWR0129
+U 1 1 5D2F8263
+P 4725 5025
+F 0 "#PWR0129" H 4725 4775 50  0001 C CNN
+F 1 "GND" H 4730 4852 50  0000 C CNN
+F 2 "" H 4725 5025 50  0001 C CNN
+F 3 "" H 4725 5025 50  0001 C CNN
+	1    4725 5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 5025 4725 4950
+$Comp
+L power:GND #PWR0130
+U 1 1 5D2F871C
+P 4250 3600
+F 0 "#PWR0130" H 4250 3350 50  0001 C CNN
+F 1 "GND" H 4255 3427 50  0000 C CNN
+F 2 "" H 4250 3600 50  0001 C CNN
+F 3 "" H 4250 3600 50  0001 C CNN
+	1    4250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3600 4250 3525
+Wire Wire Line
+	5125 2325 5425 2325
+Wire Wire Line
+	5425 2325 5425 2875
+Wire Wire Line
+	5425 2875 3975 2875
+Wire Wire Line
+	3975 2875 3975 3850
+Wire Wire Line
+	3750 1625 3750 4050
+Connection ~ 3750 1625
+Wire Wire Line
+	3750 1625 4325 1625
+Wire Wire Line
+	3750 4050 4325 4050
+Wire Wire Line
+	3650 4350 4325 4350
+Wire Wire Line
+	3650 1925 3650 4350
+Connection ~ 3650 1925
+Wire Wire Line
+	3650 1925 4325 1925
+Text HLabel 6250 1425 2    50   Output ~ 0
+D0
+Wire Wire Line
+	5125 1425 6250 1425
+Wire Wire Line
+	5125 1525 6250 1525
+Text HLabel 6250 1525 2    50   Output ~ 0
+D1
+Text HLabel 6250 1625 2    50   Output ~ 0
+D2
+Text HLabel 6250 1725 2    50   Output ~ 0
+D3
+Text HLabel 6250 1825 2    50   Output ~ 0
+D4
+Text HLabel 6250 1925 2    50   Output ~ 0
+D5
+Text HLabel 6250 2025 2    50   Output ~ 0
+D6
+Text HLabel 6250 2125 2    50   Output ~ 0
+D7
+Text HLabel 6250 3850 2    50   Output ~ 0
+D8
+Text HLabel 6250 3950 2    50   Output ~ 0
+D9
+Text HLabel 6250 4050 2    50   Output ~ 0
+D10
+Text HLabel 6250 4150 2    50   Output ~ 0
+D11
+Text HLabel 6250 4250 2    50   Output ~ 0
+D12
+Text HLabel 6250 4350 2    50   Output ~ 0
+D13
+Text HLabel 6250 4450 2    50   Output ~ 0
+D14
+Text HLabel 6250 4550 2    50   Output ~ 0
+D15
+Wire Wire Line
+	6250 3850 5125 3850
+Wire Wire Line
+	6250 3950 5125 3950
+Wire Wire Line
+	6250 4050 5125 4050
+Wire Wire Line
+	6250 4150 5125 4150
+Wire Wire Line
+	6250 4250 5125 4250
+Wire Wire Line
+	6250 4350 5125 4350
+Wire Wire Line
+	6250 4450 5125 4450
+Wire Wire Line
+	6250 4550 5125 4550
+Wire Wire Line
+	6250 1625 5125 1625
+Wire Wire Line
+	6250 1725 5125 1725
+Wire Wire Line
+	6250 1825 5125 1825
+Wire Wire Line
+	6250 1925 5125 1925
+Wire Wire Line
+	6250 2025 5125 2025
+Wire Wire Line
+	6250 2125 5125 2125
+$Comp
+L 74xx:74HC595 U8
+U 1 1 5D2FBDA6
+P 4725 4250
+F 0 "U8" H 4875 4800 50  0000 C CNN
+F 1 "74HC595" H 4950 3600 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4725 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4725 4250 50  0001 C CNN
+F 4 "F:1013860" H 4725 4250 50  0001 C CNN "Fournisseur"
+	1    4725 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R66
+U 1 1 5D2FC032
+P 3325 2225
+F 0 "R66" H 3395 2271 50  0000 L CNN
+F 1 "100K" H 3395 2180 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3255 2225 50  0001 C CNN
+F 3 "~" H 3325 2225 50  0001 C CNN
+F 4 "F:2447560" H 3325 2225 50  0001 C CNN "Fournisseur"
+	1    3325 2225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1425 4325 1425
+Wire Wire Line
+	3125 1625 3750 1625
+Wire Wire Line
+	3125 1925 3325 1925
+$Comp
+L power:GND #PWR0131
+U 1 1 5D2FF05E
+P 3325 2500
+F 0 "#PWR0131" H 3325 2250 50  0001 C CNN
+F 1 "GND" H 3330 2327 50  0000 C CNN
+F 2 "" H 3325 2500 50  0001 C CNN
+F 3 "" H 3325 2500 50  0001 C CNN
+	1    3325 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3325 2075 3325 1925
+Connection ~ 3325 1925
+Wire Wire Line
+	3325 1925 3650 1925
+Wire Wire Line
+	3325 2375 3325 2500
+$Comp
+L power:GND #PWR0132
+U 1 1 5D300F5A
+P 4075 2600
+F 0 "#PWR0132" H 4075 2350 50  0001 C CNN
+F 1 "GND" H 4080 2427 50  0000 C CNN
+F 2 "" H 4075 2600 50  0001 C CNN
+F 3 "" H 4075 2600 50  0001 C CNN
+	1    4075 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4075 2600 4075 2025
+Wire Wire Line
+	4075 2025 4325 2025
+$Comp
+L power:GND #PWR0133
+U 1 1 5D30273A
+P 4075 5025
+F 0 "#PWR0133" H 4075 4775 50  0001 C CNN
+F 1 "GND" H 4080 4852 50  0000 C CNN
+F 2 "" H 4075 5025 50  0001 C CNN
+F 3 "" H 4075 5025 50  0001 C CNN
+	1    4075 5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4075 5025 4075 4450
+Wire Wire Line
+	4075 4450 4325 4450
+$Comp
+L myLibS:+3.3V #PWR0134
+U 1 1 5EB0FE94
+P 4725 3150
+F 0 "#PWR0134" H 4725 3000 50  0001 C CNN
+F 1 "+3.3V" H 4740 3323 50  0000 C CNN
+F 2 "" H 4725 3150 50  0001 C CNN
+F 3 "" H 4725 3150 50  0001 C CNN
+	1    4725 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L myLibS:+3.3V #PWR0135
+U 1 1 5EB106E3
+P 4725 725
+F 0 "#PWR0135" H 4725 575 50  0001 C CNN
+F 1 "+3.3V" H 4740 898 50  0000 C CNN
+F 2 "" H 4725 725 50  0001 C CNN
+F 3 "" H 4725 725 50  0001 C CNN
+	1    4725 725 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 725  4725 800 
+$Comp
+L myLibS:+3.3V #PWR0136
+U 1 1 5EB13C64
+P 4100 1725
+F 0 "#PWR0136" H 4100 1575 50  0001 C CNN
+F 1 "+3.3V" V 4115 1853 50  0000 L CNN
+F 2 "" H 4100 1725 50  0001 C CNN
+F 3 "" H 4100 1725 50  0001 C CNN
+	1    4100 1725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L myLibS:+3.3V #PWR0137
+U 1 1 5EB1468C
+P 4100 4150
+F 0 "#PWR0137" H 4100 4000 50  0001 C CNN
+F 1 "+3.3V" V 4115 4278 50  0000 L CNN
+F 2 "" H 4100 4150 50  0001 C CNN
+F 3 "" H 4100 4150 50  0001 C CNN
+	1    4100 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 6600 4325 6600
+$Comp
+L Device:C C?
+U 1 1 5ED2860C
+P 4250 5825
+AR Path="/5CF8F033/5ED2860C" Ref="C?"  Part="1" 
+AR Path="/5CFA111D/5ED2860C" Ref="C?"  Part="1" 
+AR Path="/5ED2860C" Ref="C?"  Part="1" 
+AR Path="/5D1DA7D4/5ED2860C" Ref="C?"  Part="1" 
+AR Path="/5D2F7A84/5ED2860C" Ref="C?"  Part="1" 
+AR Path="/5EB0C120/5ED2860C" Ref="C50"  Part="1" 
+F 0 "C50" H 4135 5779 50  0000 R CNN
+F 1 "100nF" H 4135 5870 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4288 5675 50  0001 C CNN
+F 3 "~" H 4250 5825 50  0001 C CNN
+F 4 "" H -25 1600 50  0001 C CNN "Fournisseur"
+	1    4250 5825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 5675 4725 5675
+Wire Wire Line
+	4725 5675 4725 5600
+Wire Wire Line
+	4725 5675 4725 6100
+Connection ~ 4725 5675
+$Comp
+L power:GND #PWR0256
+U 1 1 5ED2861A
+P 4725 7475
+F 0 "#PWR0256" H 4725 7225 50  0001 C CNN
+F 1 "GND" H 4730 7302 50  0000 C CNN
+F 2 "" H 4725 7475 50  0001 C CNN
+F 3 "" H 4725 7475 50  0001 C CNN
+	1    4725 7475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 7475 4725 7400
+$Comp
+L power:GND #PWR0257
+U 1 1 5ED28625
+P 4250 6050
+F 0 "#PWR0257" H 4250 5800 50  0001 C CNN
+F 1 "GND" H 4255 5877 50  0000 C CNN
+F 2 "" H 4250 6050 50  0001 C CNN
+F 3 "" H 4250 6050 50  0001 C CNN
+	1    4250 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 6050 4250 5975
+Wire Wire Line
+	3750 6500 4325 6500
+Wire Wire Line
+	3650 6800 4325 6800
+Wire Wire Line
+	6250 6300 5125 6300
+Wire Wire Line
+	6250 6400 5125 6400
+Wire Wire Line
+	6250 6500 5125 6500
+Wire Wire Line
+	6250 6600 5125 6600
+Wire Wire Line
+	6250 6700 5125 6700
+Wire Wire Line
+	6250 6800 5125 6800
+Wire Wire Line
+	6250 6900 5125 6900
+Wire Wire Line
+	6250 7000 5125 7000
+$Comp
+L 74xx:74HC595 U9
+U 1 1 5ED2863B
+P 4725 6700
+F 0 "U9" H 4875 7250 50  0000 C CNN
+F 1 "74HC595" H 4950 6050 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4725 6700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4725 6700 50  0001 C CNN
+F 4 "F:1013860" H 4725 6700 50  0001 C CNN "Fournisseur"
+	1    4725 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0258
+U 1 1 5ED28645
+P 4075 7475
+F 0 "#PWR0258" H 4075 7225 50  0001 C CNN
+F 1 "GND" H 4080 7302 50  0000 C CNN
+F 2 "" H 4075 7475 50  0001 C CNN
+F 3 "" H 4075 7475 50  0001 C CNN
+	1    4075 7475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4075 7475 4075 6900
+Wire Wire Line
+	4075 6900 4325 6900
+$Comp
+L myLibS:+3.3V #PWR0259
+U 1 1 5ED28651
+P 4725 5600
+F 0 "#PWR0259" H 4725 5450 50  0001 C CNN
+F 1 "+3.3V" H 4740 5773 50  0000 C CNN
+F 2 "" H 4725 5600 50  0001 C CNN
+F 3 "" H 4725 5600 50  0001 C CNN
+	1    4725 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L myLibS:+3.3V #PWR0260
+U 1 1 5ED2865B
+P 4100 6600
+F 0 "#PWR0260" H 4100 6450 50  0001 C CNN
+F 1 "+3.3V" V 4115 6728 50  0000 L CNN
+F 2 "" H 4100 6600 50  0001 C CNN
+F 3 "" H 4100 6600 50  0001 C CNN
+	1    4100 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 4750 5900 5350
+Wire Wire Line
+	5900 5350 4000 5350
+Wire Wire Line
+	4000 5350 4000 6300
+Wire Wire Line
+	4000 6300 4325 6300
+Wire Wire Line
+	3750 4050 3750 6500
+Connection ~ 3750 4050
+Wire Wire Line
+	3650 4350 3650 6800
+Connection ~ 3650 4350
+Wire Wire Line
+	5125 4750 5900 4750
+Text HLabel 6250 6300 2    50   Output ~ 0
+D16
+Text HLabel 6250 6400 2    50   Output ~ 0
+D17
+Text HLabel 6250 6500 2    50   Output ~ 0
+D18
+Text HLabel 6250 6600 2    50   Output ~ 0
+D19
+Text HLabel 6250 6700 2    50   Output ~ 0
+D20
+Text HLabel 6250 6800 2    50   Output ~ 0
+D21
+Text HLabel 6250 6900 2    50   Output ~ 0
+D22
+Text HLabel 6250 7000 2    50   Output ~ 0
+D23
+$EndSCHEMATC

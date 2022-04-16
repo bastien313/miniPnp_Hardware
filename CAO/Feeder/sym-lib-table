@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Feeder-rescue)(type Legacy)(uri ${KIPRJMOD}/Feeder-rescue.lib)(options "")(descr ""))
+)

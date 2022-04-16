@@ -1,0 +1,97 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L myLibS:OPB460N11 U1
+U 1 1 5EB31FEB
+P 5450 2975
+F 0 "U1" H 5450 3350 50  0000 C CNN
+F 1 "OPB460N11" H 5450 3259 50  0000 C CNN
+F 2 "MyLibKicad:OPB460N11" H 5450 2800 50  0001 C CNN
+F 3 "" H 5450 2800 50  0001 C CNN
+	1    5450 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J1
+U 1 1 5EB32911
+P 4250 3025
+F 0 "J1" H 4168 3442 50  0000 C CNN
+F 1 "Conn_01x05" H 4168 3351 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 4250 3025 50  0001 C CNN
+F 3 "~" H 4250 3025 50  0001 C CNN
+	1    4250 3025
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2825 5100 2825
+Wire Wire Line
+	4450 2925 5025 2925
+Wire Wire Line
+	5025 2925 5025 3125
+Wire Wire Line
+	5025 3125 5100 3125
+Wire Wire Line
+	4450 3025 4825 3025
+Wire Wire Line
+	4825 3025 4825 3250
+Wire Wire Line
+	4825 3250 5875 3250
+Wire Wire Line
+	5875 3250 5875 3125
+Wire Wire Line
+	5875 3125 5800 3125
+Wire Wire Line
+	4450 3125 4800 3125
+Wire Wire Line
+	4800 3125 4800 3300
+Wire Wire Line
+	4800 3300 5925 3300
+Wire Wire Line
+	5925 3300 5925 2975
+Wire Wire Line
+	5925 2975 5800 2975
+Wire Wire Line
+	4450 3225 4750 3225
+Wire Wire Line
+	4750 3225 4750 3350
+Wire Wire Line
+	4750 3350 5975 3350
+Wire Wire Line
+	5975 3350 5975 2825
+Wire Wire Line
+	5975 2825 5800 2825
+$Comp
+L Device:C C1
+U 1 1 5EB35335
+P 6375 3025
+F 0 "C1" H 6490 3071 50  0000 L CNN
+F 1 "100nF" H 6490 2980 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6413 2875 50  0001 C CNN
+F 3 "~" H 6375 3025 50  0001 C CNN
+	1    6375 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6375 2875 6375 2825
+Wire Wire Line
+	6375 2825 5975 2825
+Connection ~ 5975 2825
+Wire Wire Line
+	5875 3250 6375 3250
+Wire Wire Line
+	6375 3250 6375 3175
+Connection ~ 5875 3250
+$EndSCHEMATC
